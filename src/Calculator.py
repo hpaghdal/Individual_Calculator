@@ -5,7 +5,6 @@ def addition(a, b):
     b = int(b)
     return a + b
 
-
 def subtraction(a,b):
     a = int(a)
     b = int(b)
@@ -28,6 +27,9 @@ def square(a):
     c = a*a
     return c
 
+def squareroot(a):
+    a = int(a)
+    return math.sqrt(a)
 
 class Calculator:
     result = 0
@@ -53,4 +55,8 @@ class Calculator:
 
     def sq(self, a):
         self.result = square(a)
+        return self.result
+
+    def sqroot(self, a):
+        self.result = squareroot(a)
         return self.result
